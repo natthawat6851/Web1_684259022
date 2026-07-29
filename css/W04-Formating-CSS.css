@@ -69,6 +69,7 @@ nav a {
     padding: 30px;
     width: 90%;
     margin: 0 auto;
+    min-height: 185px;
 }
 
 .hero-icon {
