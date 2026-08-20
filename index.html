@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,6 @@
     <title>HTML Tutorial</title>
 
     <style>
-
         html {
             scroll-behavior: smooth;
         }
@@ -18,7 +18,7 @@
             background-color: #89dada;
         }
 
-        h1{
+        h1 {
             color: #004d33;
             text-align: center;
             line-height: 10px;
@@ -29,7 +29,8 @@
             margin-top: 30px;
         }
 
-        ul , p {
+        ul,
+        p {
             color: 73c073(2, 3, 3);
             line-height: 1.6;
         }
@@ -43,6 +44,7 @@
             overflow-x: 40px;
             border: 2px solid #ccc;
         }
+
         .back-to-top {
             display: inline-block;
             margin-top: 10px;
@@ -55,22 +57,24 @@
         a {
             text-decoration: none;
         }
+
         a:hover {
-            color:red;
+            color: red;
             text-decoration: underline;
         }
-        
+
         .text-center {
             text-align: center;
         }
+
         .card {
             background-color: white;
-            
-        }
 
+        }
     </style>
 
 </head>
+
 <body>
     <h1 id="top">HTML Tutorial</h1>
     <p class="text-center">Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
@@ -109,7 +113,7 @@
 
     <h2 id="Structure">HTML Document Structure</h2>
     <p>An HTML document has the following basic structure:</p>
-    
+
     <p><strong>คำอธิบาย:</strong></p>
     <ul>
         <li><code>&lt;!DOCTYPE html&gt;</code>: ระบุว่าเป็นเอกสาร HTML5</li>
@@ -124,13 +128,13 @@
         <li>แท็กเริ่มต้น (Opening Tag): เช่น <code>&lt;h1&gt;</code></li>
         <li>แท็กปิด (Closing Tag): เช่น <code>&lt;/h1&gt;</code></li>
     </ul>
-    
+
     <p>แอตทริบิวต์ (Attributes): คุณสมบัติของแท็ก ใช้เพื่อกำหนดคุณสมบัติเพิ่มเติม เช่น href, src, width, height</p>
-    
+
     <p><strong>ตัวอย่างการใช้งาน:</strong></p>
     <pre>&lt;h1&gt;Hello, World!&lt;/h1&gt;
 &lt;img src="image.jpg" alt="A description of the image"&gt;</pre>
-    
+
     <a href="#top" class="back-to-top">back to top</a>
     <hr>
 
@@ -145,7 +149,7 @@
 - &lt;h4&gt;Heading 4&lt;/h4&gt;
 - &lt;h5&gt;Heading 5&lt;/h5&gt;
 - &lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
-    
+
     <a href="#top" class="back-to-top">back to top</a>
     <hr>
 
@@ -185,6 +189,7 @@
 
     <h2 id="CreatingLinks">Creating Links</h2>
     <p>workshop <br>HTML links are defined with the <code>&lt;a&gt;</code> tag...</p>
+    <a href="W06-link-image.html">workshop</a>
     <pre>
 - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
 - The href attribute specifies the URL of the page the link goes to
@@ -293,7 +298,8 @@ object-fit: cover;
     <hr>
 
     <h2 id="CreatingTables">Creating Tables</h2>
-    <p>Workshop 1 Workshop 2 <br>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p>
+    <p>Workshop 1 Workshop 2 <br>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt;
+        tags...</p>
     <pre>
 - &lt;table&gt;: Table
 - &lt;tr&gt;: Table row
@@ -368,4 +374,5 @@ object-fit: cover;
     </p>
     <p class="text-center">&copy; 2026 created by W3Schools</p>
 </body>
+
 </html>

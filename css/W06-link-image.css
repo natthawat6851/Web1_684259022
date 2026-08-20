@@ -6,7 +6,7 @@
 
 body {
     font-family:"Sriracha", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(194, 241, 194);
+    background-color: rgb(210, 255, 240);
     color: #000;
     line-height: 1.6;
 }
@@ -107,6 +107,7 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 0.8fr;
     background : linear-gradient(100deg,#ffffff ,#00ff9d);
+    border: 1px solid rgb(121, 218, 185);
     border-radius: 10px;
     padding: 24px 36px;
     box-shadow: 0px 4px 12px rgba(59, 56, 56, 0.25);
@@ -139,13 +140,122 @@ body {
     border: 1px solid #000;
 }
 
+/*=============Link Exem============*/
+
 .card {
-    border: 1px solid rgb(0, 255, 170);
-    margin: 15px;
-    padding: 15px;
-    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(121, 218, 185);
+    box-shadow: 0px 4px 12px rgba(59, 56, 56, 0.25);
+    padding: 24px 36px;
 }
 
+.card-header-title {
+    /* background-color: rgb(27, 160, 10) */
+}
+
+.card-header-title h2 {
+    /* background-color: rgb(27, 160, 10) */
+    color:  #21816d;
+}
+
+.card-body-grid{
+    /* background-color: rgb(0, 252, 34); */
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 20px;
+    line-height: 2;
+}
+
+.result-panel ,.code-panel {
+    background-color: rgb(255, 255, 255);
+    border : 1px solid rgb(121, 218, 185);
+    border-radius: 10px ;
+    overflow: hidden;
+
+}
+
+.result-panel-header,.code-panel-header {
+    background-color:rgb(121, 218, 185);
+    color: #21816d;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+.result-panel-body{
+    padding: 5px 10px 10px 10px;
+}
+
+.result-panel-body a {
+    display: block;
+    color: #349991;
+    line-height: 2;
+}
+
+.result-panel-body a:hover{
+    color: blue;
+}
+
+.result-panel-emoji {
+    border-radius: 10px;
+    background-color: #349991;
+    margin-right: 6px;
+    padding: 0 3px;
+}
+
+.back-bottom {
+    border: 2px solid #349991;
+    border-radius: 10px;
+    display: inline-block !important;
+    padding: 2px 10px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.code-panel{
+    background-color: #000;
+}
+
+.code-panel-body {
+    color: white;
+}
+
+.code-list {
+    padding: 0px 20px;
+    margin: 20px;
+}
+
+.code-list li {
+    padding: 0px 10px;
+}
+
+.tag {
+    color: red;
+}
+ 
+.value {
+    color: green;
+}
+
+.attr {
+    color: greenyellow;
+}
+
+.result-panel-body-3g {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items:baseline;
+    text-align: center;
+}
+
+figure img {
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 4px 12px rgba(59, 56, 56, 0.25);
+    border-radius: 10px;
+    border: 1px solid black;
+}
 
 .right-sidebar {
     border: 1px solid rgb(255, 4, 247);
@@ -158,3 +268,4 @@ body {
     margin: 15px;
     padding: 15px;
 }
+
