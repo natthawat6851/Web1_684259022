@@ -1,0 +1,278 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: "Prompt", Tahoma, Geneva, Verdana, sans-serif;
+background-color: rgb(210, 255, 240);
+color: #000;
+line-height: 1.6;
+}
+
+/* ------------Set Fonts------------ */
+.prompt-thin {
+  font-family: "Prompt", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.prompt-extralight {
+  font-family: "Prompt", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.prompt-light {
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.prompt-regular {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prompt-medium {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.prompt-semibold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.prompt-bold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.prompt-extrabold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.prompt-black {
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.prompt-thin-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.prompt-extralight-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.prompt-light-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.prompt-regular-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.prompt-medium-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.prompt-semibold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.prompt-bold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.prompt-extrabold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.prompt-black-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h1 {
+margin: 0;
+font-size: 40px;
+}
+
+h2 {
+    color: #21816d;
+    line-height: 2;
+}
+
+/* pre code {
+    padding:10px 0px 0px 30px;
+    background-color: #000;
+    color: #73c073;
+    border-radius: 10px;
+} */
+
+/* .container {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid red;
+} */
+
+/* ------------Header------------ */
+header {
+    background: linear-gradient(90deg, #00ffea, #00ff9d);
+    color: #000;
+    padding: 30px;
+    text-align: center;
+}
+/* ------------Body------------ */
+.card {
+    background-color: #fff;
+    padding: 0 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topic-body a {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: none;
+    color: #21816d;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+}
+
+.topic-card {
+    transition: background-color 0.3s ease;
+    padding: 0px 0px 0px 0px;
+    border: 1.5px solid #21816d;
+    border-radius: 20px;
+    width: 150px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.topic-card p {
+    margin: 10px 0 0;
+    font-size: 50px;
+    text-align: center;
+    color: #21816d;
+    font-weight: bold;
+}
+
+.topic-card:hover {
+    background-color: #defaec;
+}
+
+.topic-header {
+    border-bottom: 1px solid #21816d;
+    text-align: center; 
+}
+
+.topic-body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header {
+    border-bottom: 1px solid #21816d;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body pre{
+    padding:10px 0px 0px 30px;
+    background-color: #000;
+    color: #73c073;
+    border-radius: 10px;
+}
+
+.card-body p {
+    color: #003a2e;
+    padding-left:30px;
+}
+
+.card-body ul {
+    color: #0a2520;
+    list-style-type: circle;
+    padding-left: 80px;
+}
+
+.workshop {
+    display: inline-block;
+    margin: 5px;
+    padding: 2.5px 5px;
+    color: #21816d;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #21816d;
+    border-radius: 10px;
+}
+
+.workshop:hover {
+    background-color: #defaec;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin: 20px;
+    padding: 5px 10px;
+    color: #21816d;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #21816d;
+    border-radius: 10px;
+}
+
+.back-to-top:hover {
+    background-color: #defaec;
+}
+
+footer {
+    background-color: #21816d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+} 
