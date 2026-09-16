@@ -48,6 +48,7 @@ body {
 
     /* btn */
     --btn-bg :green ;
+
 }
 
 /* ====================
@@ -162,6 +163,71 @@ nav a.active {
     color: var(--sub-color);
 }
 
+/* ====================
+        Advice
+==================== */
+
+.advice {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.advice h2 {
+    margin-bottom: 1rem;
+    color: var(--textcolor);
+    text-align: center;
+}
+
+.advice-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 1rem;
+}
+
+.advice-section div {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-card);
+    text-align: center;
+}
+
+.c1 {
+    background-color: #7c87ff;
+    color: var(--textcolor);
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: 2px solid #2F39A9;
+}
+
+.c2 {
+    background-color: #77c4ff;
+    color: var(--textcolor);
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: 2px solid #2E6FA0;
+}
+
+.c3 {  
+    background-color: #6de2ff;
+    color: var(--textcolor);
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: 2px solid #398497;
+}
+
+.c4 {
+    background-color: #7cffe7;
+    color: var(--textcolor);
+    border: 2px solid #19927c;
+    font-size: 1rem;
+    margin-top: 1rem;
+}   
+
+.c1 h3 {color: #151c6e;}
+.c2 h3 {color: #15364e;}
+.c3 h3 {color: #1e4f5c;}
+.c4 h3 {color: #136b5b;}
 
 /* ====================
         Footer
