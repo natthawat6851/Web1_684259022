@@ -34,6 +34,9 @@ body {
   --nav-color: rgb(46, 46, 46);
   --light-nav: rgb(225, 250, 227);
   --light-text: white;
+  --red-text : red;
+  --green-text : green;
+  --blue-text : blue;
 
   /* background-color */
   --header-color: rgba(202, 255, 202, 0.849);
@@ -165,8 +168,9 @@ nav {
 
 .pet-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,250px),1fr));
   gap: 1.5rem;
+  margin: 2rem;
 }
 
 .pet-card {
@@ -199,6 +203,75 @@ nav {
 .breed {
   color: var(--sub-color);
 }
+/*===================== 
+        hide bottom  
+=====================*/
+.pet-info {
+  list-style-type: none;
+  margin-block: 1rem;
+}
+
+.pet-info li {
+  margin-bottom: 0.25rem;
+}
+
+.info-lifespan{
+  color: var(--red-text);
+}
+
+.info-size{
+  color: var(--blue-text);
+}
+
+.info-temperament {
+  color: var(--green-text);
+}
+
+.pet-details summary {
+  list-style-type: none;
+}
+
+.pet-btn {
+  background-color: var(--primary-color);
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-card);
+  color: var(--light-text);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.pet-btn:hover {
+  background-color: var(--primary-dark-color);
+  transform: translateY(-6px);
+}
+
+.show-detail {}
+
+.hide-detail {
+  display: none;
+}
+
+.pet-details[open] .hide-detail {display: inline;}
+.pet-details[open] .show-detail {display: none;}
+
+.pet-details-body {
+  margin-top: 1rem;
+
+  animation: appear 0.5s ease-out;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(-100px);}
+  to { opacity: 1; transform: translateY(0)}
+}
+
+.pet-details-body section + section {
+  margin-top: 1rem;
+}
+
+
 
 /* ====================
         Advice
@@ -217,7 +290,9 @@ nav {
 
 .advice-section {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: repeat(auto-fit,minnax(250px,1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,250px),1fr));
   gap: 1rem;
 }
 
@@ -271,6 +346,61 @@ nav {
 }
 .c4 h3 {
   color: #136b5b;
+}
+
+/* ====================
+        table
+==================== */
+
+.pet-table {
+  background-color: rgb(255, 255, 255);
+  /* border: 1px solid greenyellow; */
+  border-collapse: collapse;
+  margin-top: 2rem;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.pet-table td,.pet-table th {
+  border: 2px solid green;
+  padding: 1rem;
+  vertical-align: top;
+  overflow-wrap:break-word ;
+}
+
+.pet-table caption {
+  font-weight: bold;
+  text-align: left;
+  color: var(--primary-dark-color);
+  caption-side: top;
+}
+
+.pet-table thead th {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  
+}
+
+.pet-table tbody th {
+  background-color: var(--secondary-color);
+  color: var(--textcolor);
+  text-align: left;
+  white-space: nowrap ;
+}
+
+.pet-table thead th:nth-child(1) {width: 200px;}
+.pet-table thead th:nth-child(2) {width: 300px;}
+.pet-table thead th:nth-child(3) {width: 200px;}
+.pet-table thead th:nth-child(4) {width: 300px;}
+.pet-table thead th:nth-child(5) {width: 200px;}
+
+.pet-table tbody tr:nth-child(odd) {background-color: rgb(228, 252, 228);}
+.pet-table tbody tr:hover {background-color: rgb(160, 255, 173);}
+
+
+.table-responsive {
+  width: 100%;
+  overflow-x:auto;
 }
 
 /* ====================
@@ -353,5 +483,31 @@ footer {
 }
 
 /* ====================
-       respone
+        respone
 ==================== */
+
+@media (max-width: 922px) {
+    .pet-grid {
+      /* grid-template-columns: repeat(2,1fr); */
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    .pet-grid {
+      grid-template-columns: repeat(1,1fr);
+    }
+    .category-nav label {
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+
+    .category-nav label:hover {
+      transform: translateY(-2px);
+    }
+
+    .advice-section {
+      /* grid-template-columns: repeat(2,1fr); */
+    }
+}
