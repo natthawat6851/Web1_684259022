@@ -1,0 +1,368 @@
+:root {
+  /* primary-color */
+  --primary-color: rgb(79, 190, 79);
+  --primary-dark-color: rgb(0, 104, 0);
+  --secondary-color: rgb(158, 241, 158);
+  --footer-color: black;
+  /* text-color */
+  --textcolor: #000;
+  --sub-color: grey;
+  --nav-color: rgb(46, 46, 46);
+  --light-nav: rgb(225, 250, 227);
+  --light-text: white;
+  --red-text : red;
+  --green-text : green;
+  --blue-text : blue;
+
+    /* background-color */
+  --header-color: rgba(202, 255, 202, 0.849);
+  --card-color: white;
+  --radio-back-color: rgb(172, 255, 244);
+  /* shadow */
+  --shadow-header: 0px 2px 8px #00faaf5e;
+  --shadow-card: 0px 2px 10px #87f7d55e;
+
+  /* border */
+  --border-color: 1px solid rgb(0, 255, 0);
+  --dark-border-color: 1px solid rgba(123, 216, 193, 0.637);
+  /* btn */
+  --btn-bg: green;
+  
+  /* advide */
+ /* --c1 : border-left: solid 8px #7c87ff;
+ --c2 : border-left: solid 8px #77c4ff;
+ --c3 : border-left: solid 8px #6de2ff;
+ --c4 : border-left: solid 8px #7cffe7; */
+}
+
+/* ========================
+         Category Filter
+===========================*/
+ 
+.category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.category-btn {
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    border: none;
+   
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+   
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+.category-btn:not(.active) {
+    background: #a3a9ff;
+    /* color: #374151; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.category-btn:not(.active):hover {
+    background: #f3f4f6;
+    color : black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.category-btn.active {
+    background: linear-gradient(to right, #00fa3e, #a3a9ff);
+    color: white;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    transform: scale(1.05);
+}
+ 
+ 
+ 
+ 
+/* ================================= */
+/* =========== Pet Grid ============ */
+/* ================================= */
+ 
+/* เพิ่ม */
+.pet-category-badge {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+/* เพิ่ม */
+.pet-image-container {
+    position: relative;
+    height: 16rem;
+    overflow: hidden;
+}
+ 
+/* ========================
+    Pet info
+    ปุ่มซ่อน แสดง รายละเอียด
+===========================*/
+ 
+/* เพิ่ม */
+.pet-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+/* เพิ่ม */
+.pet-info-icon {
+    width: 1rem;
+    height: 1rem;
+}
+ 
+ 
+/* เพิ่ม */
+.pet-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+/* เพิ่ม */
+.pet-info-icon {
+    width: 1rem;
+    height: 1rem;
+}
+ 
+ 
+ 
+ 
+ 
+/* เพิ่ม */
+.pet-details {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    animation: fadeIn 0.3s;
+}
+
+.pet-details-section {
+    margin-bottom: 0.75rem;
+}
+
+.pet-details-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.pet-details-text {
+    font-size: 0.875rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary-dark-color);
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,250px),1fr));
+  gap: 1.5rem;
+  margin: 2rem;
+}
+
+.pet-card {
+  border: var(--border-color);
+  box-shadow: var(--shadow-card);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.5s;
+  /* background-color: var(--card-color); */
+}
+
+.pet-card:hover {
+  transform: translateY(-10px);
+}
+
+.pet-card img {
+  height: 16.25rem;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.pet-content {
+  padding: 1.25rem;
+}
+
+.pet-content h3 {
+  color: var(--primary-color);
+}
+.breed {
+  color: var(--sub-color);
+}
+/*===================== 
+        hide bottom  
+=====================*/
+.pet-info {
+  list-style-type: none;
+  margin-block: 1rem;
+}
+
+.pet-info li {
+  margin-bottom: 0.25rem;
+}
+
+.info-lifespan{
+  color: var(--red-text);
+}
+
+.info-size{
+  color: var(--blue-text);
+}
+
+.info-temperament {
+  color: var(--green-text);
+}
+
+.pet-details summary {
+  list-style-type: none;
+}
+
+.pet-btn {
+  background-color: var(--primary-color);
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-card);
+  color: var(--light-text);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.pet-btn:hover {
+  background-color: var(--primary-dark-color);
+  transform: translateY(-6px);
+}
+
+.show-detail {}
+
+.hide-detail {
+  display: none;
+}
+
+.pet-details[open] .hide-detail {display: inline;}
+.pet-details[open] .show-detail {display: none;}
+
+.pet-details-body {
+  margin-top: 1rem;
+
+  animation: appear 0.5s ease-out;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(-100px);}
+  to { opacity: 1; transform: translateY(0)}
+}
+
+.pet-details-body section + section {
+  margin-top: 1rem;
+}
+
+
+.carousel-inner .carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: calc(100vh-160px);
+    
+}
+
+.advice {
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.advice h2 {
+  text-align: center;
+}
+
+.advice-section {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: repeat(auto-fit,minnax(250px,1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,250px),1fr));
+  gap: 1rem;
+}
+
+.advice-section div {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.c1 { border-left: solid 8px #7c87ff; }
+.c2 { border-left: solid 8px #77c4ff; }
+.c3 { border-left: solid 8px #6de2ff; }
+.c4 { border-left: solid 8px #7cffe7; }
+
+.card h3 { color: var(--primary-color); }
+/* .card h3 { color: #151c6e; }
+.c2 h3 { color: #15364e; }
+.c3 h3 { color: #1e4f5c; }
+.c4 h3 { color: #136b5b; } */
+
+/* .card {
+    background-color: rgb(179, 178, 178);
+    color: #000;
+    box-shadow:0px 2px 10px white;
+} */
+/* .c1 {
+  background-color: #7c87ff;
+  color: var(--textcolor);
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #2f39a9;
+}
+
+.c2 {
+  background-color: #77c4ff;
+  color: var(--textcolor);
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #2e6fa0;
+}
+
+.c3 {
+  background-color: #6de2ff;
+  color: var(--textcolor);
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #398497;
+}
+
+.c4 {
+  background-color: #7cffe7;
+  color: var(--textcolor);
+  border: 2px solid #19927c;
+  font-size: 1rem;
+  margin-top: 1rem;
+} */
+
+
